@@ -1,4 +1,5 @@
 import { ADVANCED_CASES } from "./advanced-cases.js";
+import { EXTRA_CASES } from "./extra-cases.js";
 
 export const CASES = [
   {
@@ -91,7 +92,8 @@ export const CASES = [
     options: ["۱۵:۰۳", "۱۵:۰۵", "۱۵:۰۷", "۱۵:۱۰"], answer: 2,
     success: "پرونده قرمز رو باز کردی، کارآگاه! نقطه کلیدی همون ۳۰ ثانیه قطعی دوربینه. 🕵️‍♂️🔥"
   },
-  ...ADVANCED_CASES
+  ...ADVANCED_CASES,
+  ...EXTRA_CASES
 ];
 
 export function getCase(id) { return CASES.find(c => c.id === id); }
